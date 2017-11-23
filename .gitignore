@@ -19,4 +19,4 @@
 .byebug_history
 
 #I don't want to share my secret file.
-/config/secret.yml
+/config/secrets.ymlgit
