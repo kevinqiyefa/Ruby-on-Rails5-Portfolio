@@ -55,3 +55,5 @@ gem 'devise', '~> 4.3'
 
 gem 'bootstrap', '~> 4.0.0.beta3'
 gem 'jquery-rails'
+
+gem 'kevin_view_tool', git: "https://github.com/kevinqiyefa/kevin_view_tool"
