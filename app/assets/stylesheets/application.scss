@@ -154,6 +154,20 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 50rem;
+    width: 55rem;
   }
+}
+
+
+/*
+ * Custom styles
+ */
+ 
+.card-body {
+  color: black;
+  text-align: left;
+}
+
+.auth-links a {
+  color: black;
 }
