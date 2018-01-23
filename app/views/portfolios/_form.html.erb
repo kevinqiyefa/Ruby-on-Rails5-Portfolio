@@ -2,7 +2,7 @@
   
   <% if @portfolio_item.errors.any? %>
       <% @portfolio_item.errors.full_messages.each do |message| %>
-        <%= js add_gritter(message, title: "Kevin Qi Portfolio", sticky: false) %>
+        <%= alert_generator message %>
       <% end %>
   <% end %>
 
