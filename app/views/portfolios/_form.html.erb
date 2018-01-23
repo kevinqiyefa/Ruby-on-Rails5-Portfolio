@@ -1,4 +1,11 @@
-<%= form_for(@portfolio_item ) do |form| %>
+<%= form_for(@portfolio_item) do |form| %>
+  
+  <% if @portfolio_item.errors.any? %>
+      <% @portfolio_item.errors.full_messages.each do |message| %>
+        <%= js add_gritter(message, title: "Kevin Qi Portfolio", sticky: false) %>
+      <% end %>
+  <% end %>
+
 
   <div class='row'>
     <div class='col-md-6'>
@@ -50,6 +57,9 @@
             <%= link_to_add_association 'Add Technology', form, :technologies %>
           </div>
         </div>
+      
+        <br>
+        <br>
       
         <div class="form-group">
           <%= form.submit 'Save Portfilo Item', class: 'btn btn-primary btn-block' %>
