@@ -75,7 +75,7 @@ module ApplicationHelper
     end
     
     def alerts
-        alert = (flash[:alert] || flash[:error] || flash[:notice])
+        alert = (flash[:notice] || flash[:alert] || flash[:error])
         
         if alert
             alert_generator alert
