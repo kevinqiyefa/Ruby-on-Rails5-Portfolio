@@ -9,12 +9,59 @@
                     <%= image_tag "kevinqi.jpg", width: 250, alt: "Profile Image", class: 'profile-img' %>
                 </div>
                 
-                <div class="col-md-1">
-                </div>
-                
-                <div class="col-md-7 about-text">
-                    <br>
+                <div class="col-md-8">
+          
                     <h4>As a college graduate with a bachelor's degree in computer science, I have solid knowledge of many types of programming languages as well as some practical experience in web development</h4>
+                
+                
+                    <p>
+                      <button
+                        class="btn btn-primary"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#jobHistory"
+                        aria-expanded="false"
+                        aria-controler="jobHistory"
+                      >
+                        Job History
+                      </button>
+                      
+                      <button
+                        class="btn btn-primary"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#education"
+                        aria-expanded="false"
+                        aria-controler="education"
+                      >
+                        Education
+                      </button>
+                      
+                    </p>
+                    
+                    <p>
+                      <div class="collapse" id="jobHistory">
+                        <div class="card card-body">
+                          Job 1
+                        </div>
+                        <div class="card card-body">
+                          Job 2
+                        </div>
+                      </div>
+                      
+                      <div class="collapse" id="education">
+                        <div class="card card-body">
+                          School 1
+                        </div>
+                        <div class="card card-body">
+                          School 2
+                        </div>
+                        <div class="card card-body">
+                          School 3
+                        </div>
+                      </div>
+                      
+                    </p>
                 </div>
                 
             </div>

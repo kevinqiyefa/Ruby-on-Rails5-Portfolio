@@ -171,6 +171,8 @@ body {
 .card-body {
   color: black;
   text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .auth-links a {
@@ -215,10 +217,6 @@ body {
 
 .lead {
     font-weight: 500;
-}
-
-.about-text {
-  margin-top: 3rem;
 }
 
 .tech-news {
