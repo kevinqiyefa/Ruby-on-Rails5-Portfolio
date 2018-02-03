@@ -1,22 +1,93 @@
-
-
-<div role="main" class="inner cover">
-    <h1 class="cover-heading">About Me</h1>
-    <br>
-    <br>
-    <div class="row">
-        <div class="col-md-4">
-            <%= image_tag "kevinqi.jpg", width: 250, alt: "Profile Image", class: "rounded-circle mx-auto d-block" %>
-        </div>
-        
-        <div class="col-md-1">
-        </div>
-        
-        <div class="col-md-7 about-text">
+<div class="app-card-container">
+    <div class="card">
+        <div role="main" class="inner cover">
+            <h1 class="cover-heading">About Me</h1>
             <br>
-            <h4>As a college graduate with a bachelor's degree in computer science, I have solid knowledge of many types of programming languages as well as some practical experience in web development</h4>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <%= image_tag "kevinqi.jpg", width: 260, alt: "Profile Image", class: 'profile-img' %>
+                    
+                    <div class="skills">
+                      <% @skills.each do |skill| %>
+                        <div class="skill">
+                          <h4><%= skill.title %></h4>
+                          <div class="progress">
+                            <div
+                              class="progress-bar progress-bar-striped bg-warning"
+                              role="progressbar"
+                              aria-valuenow="<%= skill.percent_utilized %>"
+                              aria-valuemax="100"
+                              style="width: <%= skill.percent_utilized %>%"
+                            ></div>
+                          </div>
+                        </div>
+                      <% end %>
+                    </div>
+                
+                </div>
+                
+                <div class="col-md-1"></div>
+                
+                <div class="col-md-7">
+          
+                    <h4>As a college graduate with a bachelor's degree in computer science, I have solid knowledge of many types of programming languages as well as some practical experience in web development</h4>
+                
+                
+                    <p>
+                      <button
+                        class="btn btn-primary"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#jobHistory"
+                        aria-expanded="false"
+                        aria-controler="jobHistory"
+                      >
+                        Job History
+                      </button>
+                      
+                      <button
+                        class="btn btn-primary"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#education"
+                        aria-expanded="false"
+                        aria-controler="education"
+                      >
+                        Education
+                      </button>
+                      
+                    </p>
+                    
+                    <p>
+                      <div class="collapse" id="jobHistory">
+                        <div class="card card-body">
+                          Job 1
+                        </div>
+                        <div class="card card-body">
+                          Job 2
+                        </div>
+                      </div>
+                      
+                      <div class="collapse" id="education">
+                        <div class="card card-body">
+                          School 1
+                        </div>
+                        <div class="card card-body">
+                          School 2
+                        </div>
+                        <div class="card card-body">
+                          School 3
+                        </div>
+                      </div>
+                      
+                    </p>
+                </div>
+                
+            </div>
         </div>
-        
+      
     </div>
-</div>
+</div>  
+
 

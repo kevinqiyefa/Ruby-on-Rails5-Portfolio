@@ -7,7 +7,11 @@
     
     <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
+    
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto+Slab" rel="stylesheet">
 
+    <%= favicon_link_tag 'favicons/favicon2.ico' %>
+    
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -23,8 +27,6 @@
     
     <%= render "shared/portfolio_footer"  %>
     
-    <%= source_helper("application") %>
-    
-    
+    <%= alerts %>
   </body>
 </html>
