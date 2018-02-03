@@ -105,6 +105,7 @@ body {
   .nav-masthead {
     float: right;
   }
+  
 }
 
 
@@ -138,9 +139,10 @@ body {
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    margin-top: 3rem;
     bottom: 0;
   }
+  
 
   /* Start the vertical centering */
   .site-wrapper-inner {
@@ -233,6 +235,7 @@ body {
 }
 
 .app-card-container {
+  margin-top: 10rem;
   color: black;
   text-align: left;
 }
@@ -243,4 +246,16 @@ body {
 
 .profile-img {
   border: 1px solid grey;
+}
+
+
+.skill {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 40em) {
+  .app-card-container {
+    margin-top: 0rem;
+  }
 }
