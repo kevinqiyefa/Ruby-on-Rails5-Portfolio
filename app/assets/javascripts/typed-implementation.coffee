@@ -1,8 +1,7 @@
 ready = ->
   Typed.new '.element',
     strings: [
-      'Software development is the closest concept we have to magic.'
-      "It's my goal to ensure that anyone with a passion for coding can become a true programming artisan."
+      "Software Development should not be a secret process, when I take on a new project I make it my goal to not only deliver a well crafted product but to also ensure that each stage of the process is fully communicated."
     ]
     typeSpeed: 0
   return
