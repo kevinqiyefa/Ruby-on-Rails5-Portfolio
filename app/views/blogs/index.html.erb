@@ -1,4 +1,7 @@
 <div class="col-sm-8 blog-main">
+  <% if current_page?(blogs_path) %>
+      <%= render "blog_modal" %>
+  <% end %>
   
   <%= paginate @blogs %>
   
