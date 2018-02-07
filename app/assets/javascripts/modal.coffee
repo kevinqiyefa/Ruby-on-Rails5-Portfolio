@@ -3,7 +3,7 @@ ready = ->
     setTimeout (->
       $('#myModal').modal 'hide'
       return
-    ), 3000
+    ), 5000
     return
 
     
