@@ -8,5 +8,5 @@ This is a simple Ruby on Rails 5 portfolio App
 - Real time chat engine for comments
 - Blog
 - Portfolio
-- Twitter API datas
+- Twitter API data
 - Drag and drop interface
