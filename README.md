@@ -2,6 +2,9 @@
 
 This is a simple Ruby on Rails 5 portfolio App
 
+[Click here to view the Demo](https://kevin-rails-portfolio.herokuapp.com/)
+
+
 
 ### Features
 
